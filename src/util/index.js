@@ -4,7 +4,7 @@ export const createShader = function (gl, type, source) {
     gl.shaderSource(shader, source);
     gl.compileShader(shader);
 
-    return shader
+    return shader;
 
 }
 
@@ -15,7 +15,7 @@ export const createProgram = function (gl, vertexShader, fragmentShader) {
     gl.attachShader(program, fragmentShader);
     gl.linkProgram(program);
 
-    return program
+    return program;
 
 }
 

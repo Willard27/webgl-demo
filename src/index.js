@@ -2,11 +2,11 @@ import frag from './shader/index.frag';
 import vert from './shader/index.vert';
 import { createProgram, createShader, randomColor } from './util';
 
-var canvas = document.querySelector('#canvas')
+var canvas = document.querySelector('#canvas');
 // 兼容性判断
-var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
 
-console.log(gl)
+console.log(gl);
 
 // 流程1: 创建顶点着色器对象
 // const vertexShader = gl.createShader(gl.VERTEX_SHADER);
@@ -66,10 +66,10 @@ canvas.addEventListener('click', function (e) {
 
         gl.uniform4f(u_color, color.r, color.g, color.b, color.a);
 
-        console.log(i)
+        console.log(i);
         gl.vertexAttrib2f(a_position, point[i].x, point[i].y);
         // 绘制
-        gl.drawArrays(gl.POINTS, 0, 1)
+        gl.drawArrays(gl.POINTS, 0, 1);
 
     }
 
