@@ -1,6 +1,6 @@
 precision mediump float;
 
-attribute vec4 u_color;
+uniform vec4 u_color;
 
 // 片元着色器
 void main(){
